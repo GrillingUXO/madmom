@@ -181,7 +181,7 @@ def modify(base_pitch, modifier):
             raise ValueError('Unknown modifier: {}'.format(m))
     return base_pitch
 
-#################################
+
 import numpy as np
 
 def pitch(pitch_str):
@@ -348,7 +348,6 @@ def merge_chords(chords):
     crds['end'] = merged_ends
     crds['chord'] = merged_chords
     return crds
-###########################
 
 
 
@@ -597,7 +596,6 @@ def reduce_to_tetrads(chords, keep_bass=False):
 
     return reduced_chords
 
-########################################
 def select_majmin(chords):
     """
     Compute a mask that selects all major, minor, and
